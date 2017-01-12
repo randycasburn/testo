@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static Pages with Angular 2 Components</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="a2comps/config.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.min.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/http.min.js"></script>
+    <script src="non_angular.js"></script>
+    <script>
+      System.import('a2comps/items.ts')
+        .catch(console.error.bind(console));
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">Just Components</span>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="items.html">Items</a></li>
+                <li><a href="shapes.html">Shapes</a></li>
+                <li><a href="items_and_shapes.html">Items and Shapes</a></li>
+                <li><a href="other_static.html">Challenges/Consequences</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <items>
+                    <div class="text-center"><img src="gears.svg"></div>
+                </items>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Send Data OUT of a Component</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Click any row in a table. The row's data will be placed below.</p>
+                        <br>
+                        <p>The Angular Component generates a custom event. Plain old JS is used to listen for the custom event and update the view traditionally.</p>
+                        <br>
+                        <div id="itemizer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

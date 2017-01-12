@@ -1,0 +1,1 @@
+## A demonstration of using Angular 2 Components in a non-SPA static website

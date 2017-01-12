@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">Just Components</span>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="shapes.html">Shapes</a></li>
+                <li><a href="items_and_shapes.html">Items and Shapes</a></li>
+                <li><a href="other_static.html">Challenges/Consequences</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <h1>Angular 2 Components Without a SPA</h1>
+        <table class="table table-bordered lead">
+            <tr><td class="col-xs-3 text-right">Home</td><td>There is no angular on this page at all.</td></tr>
+            <tr><td class="col-xs-3 text-right">Items</td><td>A static page with Component. Send data <em>OUT</em> of Component <em>TO</em> static page.</td></tr>
+            <tr><td class="col-xs-3 text-right">Shapes</td><td>A static page with Component. Send data <em>INTO</em> Component <em>FROM</em> static page.</td></tr>
+            <tr><td class="col-xs-3 text-right">Items & Shapes</td><td>Combine everything into one static page.</td></tr>
+            <tr><td class="col-xs-3 text-right">Challenges/Consequences</td><td>for consideration, but not insurmountable</td></tr>
+        </table>
+    </div>
+    <div>
+        <h4>Why?</h4>
+        <p>I'm asked routinely if you can put Angular 2 Components on a static page without creating a SPA.</p>
+        <p>This is the answer: Yes</p>
+        <h4>How?</h4>
+        <p>This little app is an <em>imperfect</em> demonstration.</p>
+        <p>Forget everything about @NgModel</p>
+        <p>Forget everything about System.config path and app settings!</p>
+        <p>Forget everything about tradtional Angular 2 bootstrapping!</p>
+        <p>Each Component stands alone and boots itself</p>
+    </div>
+
+</div>
+</body>
+</html>

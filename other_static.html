@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">Just Components</span>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="shapes.html">Shapes</a></li>
+                <li><a href="items_and_shapes.html">Items and Shapes</a></li>
+                <li class="active"><a href="other_static.html">Challenges/Consequences</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="starter-template">
+        <h1 class="text-warning">The other non-angular static page</h1>
+        <div class="lead">
+            <h4>What is different from a SPA?</h4>
+            <p>No router based Component lazy-loading</p>
+            <p>No client side routing</p>
+            <p>Uses traditional full round-trip requests for each page.</p>
+            <h4>Challenges?</h4>
+            <p >The browser window is reloaded from scratch on each navigation (No SPA).</p>
+            <p>Navigating to a new page bootstraps a brand new angular app each time.</p>
+            <h4>Consequences?</h4>
+            <p>Data/state are not persisted between page changes.</p>
+            <p>You will have to persist data/state in localStorage, IndexDB, server side, etc.</p>
+            <p>Data/state management (moving data into and out of your components) is your responsibility.</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
